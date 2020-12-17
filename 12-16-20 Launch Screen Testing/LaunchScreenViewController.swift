@@ -9,10 +9,13 @@ import UIKit
 
 
 
-class ViewController: UIViewController {
+class LaunchScreenViewController: UIViewController {
    
     let pizzaImage = UIImageView(image: UIImage(named: "pizza"))
     let splashView = UIView()
+    
+    @IBOutlet weak var mainTitleLaunchScreen: UILabel!
+    var mainTitle: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
