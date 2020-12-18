@@ -7,25 +7,39 @@
 
 import UIKit
 
-class NavigationScreenViewController: UIViewController, UITableViewDelegate {
+class CuisineListViewController: UIViewController, UITableViewDelegate {
 
-    @IBOutlet weak var navigationTableView: UITableView!
+//    @IBOutlet weak var tableView: UITableView!
     
-    var placeholders = ["map",
-                        "search",
-                        "Events"]
+    @IBOutlet weak var tableView: UITableView!
+    
+    var placeholders = ["American Cuisine",
+                        "Chinese Cuisine",
+                        "French Cuisine",
+                        "Greek Cuisine",
+                        "Mexican Cuisine",
+                        "Middle Eastern Cuisine",
+                        "Peruvian Cuisine",
+                        "Philipino Cuisine",
+                        "Salvadorian Cuisine",
+                        "Vegan",
+                        "Vegetarian",
+                        "Gluten Free",
+                        
+    ]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationTableView.delegate = self
-        navigationTableView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
         
     }
 }
 
-    extension NavigationScreenViewController: UITableViewDataSource {
+extension CuisineListViewController: UITableViewDataSource {
+
     //this function tells data source which is self which is our ToDoDataList to return the number of rows in a given section of tableview
     //so we want to return the number of rows. data comes from the VC's toDoArray
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

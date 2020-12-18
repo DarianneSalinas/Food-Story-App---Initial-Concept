@@ -1,14 +1,13 @@
 //
-//  LocationViewController.swift
+//  myStoriesViewController.swift
 //  12-16-20 Launch Screen Testing
 //
-//  Created by Darianne Salinas on 12/16/20.
+//  Created by Darianne Salinas on 12/17/20.
 //
 
 import UIKit
-import CoreLocation
 
-class LocationViewController: UIViewController {
+class myStoriesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
